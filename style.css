@@ -32,7 +32,7 @@ textarea{
   border-top: 1px solid lightgrey;
 }
 
-.eventContent{
+.eventContent, .eventContent10, .eventContent11, .eventContent12, .eventContent1, .eventContent2, .eventContent3, .eventContent4, .eventContent5{
   width: 80%;
   text-align: left;
   padding-left: 1rem;
@@ -44,7 +44,7 @@ textarea{
   font-size: 14px;
 }
 
-.save{
+.save, .save10, .save11, .save12, .save1, .save2, .save3, .save4, .save5{
   width: 10%;
   text-align: center;
   padding-top: 1.5rem;

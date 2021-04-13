@@ -11,6 +11,8 @@ $("#presentDay").append(presentDay);
 //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 
 
+
+
 //WHEN I click into a timeblock
 //THEN I can enter an event
 //WHEN I click the save button for that timeblock
@@ -19,14 +21,17 @@ $("#presentDay").append(presentDay);
 //THEN the saved events persist
 
 //This is the code for 9am
+
 const storageInput9 = document.querySelector('.eventContent');
 const saveButton = document.querySelector('.save');
 const storedInput = localStorage.getItem('textInput');
-
+// Insert past, present, future code here
 if(storageInput9){
     storageInput9.textContent = storedInput
 
 }
+
+
 
 storageInput9.addEventListener('input', information =>{
     console.log(information.target.value)
@@ -43,7 +48,7 @@ saveButton.addEventListener('click', saveToLocalStorage)
 const storageInput10 = document.querySelector('.eventContent10');
 const saveButton10 = document.querySelector('.save10');
 const storedInput10 = localStorage.getItem('textInput10');
-
+//// Insert past, present, future code here 
 if(storageInput10){
     storageInput10.textContent = storedInput10
 
@@ -58,7 +63,7 @@ const saveToLocalStorage10 = () => {
     localStorage.setItem('textInput10', storageInput10.textContent)
 }
 
-saveButton10.addEventListener('click', saveToLocalStorage10)
+//saveButton10.addEventListener('click', saveToLocalStorage10)
 
 //This is the code for 11am
 const storageInput11 = document.querySelector('.eventContent11');
