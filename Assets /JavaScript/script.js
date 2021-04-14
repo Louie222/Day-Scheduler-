@@ -11,7 +11,7 @@ $("#presentDay").append(presentDay);
 //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 
 
-
+//test test
 
 //WHEN I click into a timeblock
 //THEN I can enter an event
@@ -21,7 +21,6 @@ $("#presentDay").append(presentDay);
 //THEN the saved events persist
 
 //This is the code for 9am
-
 const storageInput9 = document.querySelector('.eventContent');
 const saveButton = document.querySelector('.save');
 const storedInput = localStorage.getItem('textInput');
@@ -69,7 +68,7 @@ const saveToLocalStorage10 = () => {
 const storageInput11 = document.querySelector('.eventContent11');
 const saveButton11 = document.querySelector('.save11');
 const storedInput11 = localStorage.getItem('textInput11');
-
+//// Insert past, present, future code here 
 if(storageInput11){
     storageInput11.textContent = storedInput11
 
@@ -90,7 +89,7 @@ saveButton11.addEventListener('click', saveToLocalStorage11)
 const storageInput12 = document.querySelector('.eventContent12');
 const saveButton12 = document.querySelector('.save12');
 const storedInput12 = localStorage.getItem('textInput12');
-
+//// Insert past, present, future code here 
 if(storageInput12){
     storageInput12.textContent = storedInput12
 
@@ -111,7 +110,7 @@ saveButton12.addEventListener('click', saveToLocalStorage12)
 const storageInput1 = document.querySelector('.eventContent1');
 const saveButton1 = document.querySelector('.save1');
 const storedInput1 = localStorage.getItem('textInput1');
-
+//// Insert past, present, future code here 
 if(storageInput1){
     storageInput1.textContent = storedInput1
 
@@ -132,7 +131,7 @@ saveButton1.addEventListener('click', saveToLocalStorage1)
 const storageInput2 = document.querySelector('.eventContent2');
 const saveButton2 = document.querySelector('.save2');
 const storedInput2 = localStorage.getItem('textInput2');
-
+//// Insert past, present, future code here 
 if(storageInput2){
     storageInput2.textContent = storedInput2
 
@@ -153,7 +152,7 @@ saveButton2.addEventListener('click', saveToLocalStorage2)
 const storageInput3 = document.querySelector('.eventContent3');
 const saveButton3 = document.querySelector('.save3');
 const storedInput3 = localStorage.getItem('textInput3');
-
+//// Insert past, present, future code here 
 if(storageInput3){
     storageInput3.textContent = storedInput3
 
@@ -174,7 +173,7 @@ saveButton3.addEventListener('click', saveToLocalStorage3)
 const storageInput4 = document.querySelector('.eventContent4');
 const saveButton4 = document.querySelector('.save4');
 const storedInput4 = localStorage.getItem('textInput4');
-
+//// Insert past, present, future code here 
 if(storageInput4){
     storageInput4.textContent = storedInput4
 
@@ -195,7 +194,7 @@ saveButton4.addEventListener('click', saveToLocalStorage4)
 const storageInput5 = document.querySelector('.eventContent5');
 const saveButton5 = document.querySelector('.save5');
 const storedInput5 = localStorage.getItem('textInput5');
-
+//// Insert past, present, future code here 
 if(storageInput5){
     storageInput5.textContent = storedInput5
 
@@ -211,6 +210,84 @@ const saveToLocalStorage5 = () => {
 }
 
 saveButton5.addEventListener('click', saveToLocalStorage5)
+
+const nineAM = document.getElementById('9am');
+const tenAM = document.getElementById('10am');
+const elevenAM = document.getElementById('11am');
+const twelvePM = document.getElementById('12pm');
+const onePM = document.getElementById('1pm');
+const twoPM = document.getElementById('2pm');
+const threePM = document.getElementById('3pm');
+const fourPM = document.getElementById('4pm');
+const fivePM = document.getElementById('5pm');
+
+function pastPresentFutureColourCodingofTimeBlocks() {
+    let thePresentTime = moment().hour();
+    if (thePresentTime >= 9 && thePresentTime < 10) {
+      nineAM.style.backgroundColor = "orange";
+    }
+    else if (thePresentTime >= 10 && thePresentTime < 11) {
+      nineAM.style.backgroundColor = "white";
+      nineAM.setAttribute("readonly", true);
+      tenAM.style.backgroundColor = "orange";
+    }
+    else if (thePresentTime >= 11 && thePresentTime < 12) {
+        nineAM.style.backgroundColor = "white";
+        nineAM.setAttribute("readonly", true);
+        tenAM.style.backgroundColor = "white";
+        tenAM.setAttribute("readonly", true);
+        elevenAM.style.backgroundColor = "orange";
+      }
+    if (thePresentTime >= 12 && thePresentTime < 1) {
+        nineAM.style.backgroundColor = "white";
+        nineAM.setAttribute("readonly", true);
+        tenAM.style.backgroundColor = "white";
+        tenAM.setAttribute("readonly", true);
+        elevenAM.style.backgroundColor = "orange";
+        elevenAM.setAttribute("readonly", true);
+        twelvePM.style.backgroundColor = "orange"
+    }
+    else if (thePresentTime >= 1 && thePresentTime < 2) {
+        nineAM.style.backgroundColor = "white";
+        nineAM.setAttribute("readonly", true);
+        tenAM.style.backgroundColor = "white";
+        tenAM.setAttribute("readonly", true);
+        elevenAM.style.backgroundColor = "orange";
+        elevenAM.setAttribute("readonly", true);
+        twelvePM.style.backgroundColor = "orange";
+        twelvePM.setAttribute("readonly", true);
+        onePM.style.background = "orange";
+    }
+
+}
+
+pastPresentFutureColourCodingofTimeBlocks()
+
+  
+
+
+
+
+
+
+    //let presentTime = moment().hour();
+    //if (presentTime = 9) {
+        //nineAM.style.backgroundColor = "grey";
+    //}
+    //else if (presentTime >= 10) { 
+        //nineAM.style.backgroundColor = "red";
+    //} 
+    //if (presentTime = 10) {
+        //tenAM.style.backgroundColor = "grey";
+   // }
+    //else if (presentTime != 10) {
+        //tenAM.style.background = "red";
+    //}
+    //if (presentTime = 11) {
+        //elevenAM.style.backgroundColor = "grey"
+    //}
+
+
 
 
 
