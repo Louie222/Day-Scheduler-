@@ -348,23 +348,6 @@ pastPresentFutureColourCodingofTimeBlocks()
 
 
 
-    //let presentTime = moment().hour();
-    //if (presentTime = 9) {
-        //nineAM.style.backgroundColor = "grey";
-    //}
-    //else if (presentTime >= 10) { 
-        //nineAM.style.backgroundColor = "red";
-    //} 
-    //if (presentTime = 10) {
-        //tenAM.style.backgroundColor = "grey";
-   // }
-    //else if (presentTime != 10) {
-        //tenAM.style.background = "red";
-    //}
-    //if (presentTime = 11) {
-        //elevenAM.style.backgroundColor = "grey"
-    //}
-
 
 
 
