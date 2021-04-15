@@ -56,7 +56,7 @@ const saveToLocalStorage10 = () => {
     localStorage.setItem('textInput10', storageInput10.textContent)
 }
 
-//saveButton10.addEventListener('click', saveToLocalStorage10)
+saveButton10.addEventListener('click', saveToLocalStorage10)
 
 //This is the code for 11am timeblock on how to store the information in the event content text area into local storage
 const storageInput11 = document.querySelector('.eventContent11');
